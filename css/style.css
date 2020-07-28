@@ -319,10 +319,22 @@ footer i{
   font-size: 14px
 }
 
+.song__title h4:hover{
+  text-decoration: underline;
+}
+.song__title p:hover{
+  text-decoration: underline;
+  color:#fff;
+}
+
 .song__liked{
   color:#5C5C5C;
   margin-left: 40px;
   word-spacing: 10px;:
+}
+
+.song__liked i:hover{
+  color:#fff;
 }
 /* <!-- /sezione titolo canzone --> */
 /* <!-- sezione player canzone --> */
@@ -341,12 +353,19 @@ footer i{
   font-size: 35px;
   vertical-align: middle;
 }
+.fa-play-circle:hover{
+  font-size: 40px;
+}
 
 .player .volume-slider{
   width: 80%;
   margin: auto;
   font-weight: bold;
   font-size: 12px;
+}
+
+.player .volume-slider__point{
+  left:29%
 }
 
 .player .volume-slider::before{
@@ -392,9 +411,24 @@ footer i{
   border:3px solid #C0C0C0;
   border-radius: 10px;
 }
+.volume-slider__point{
+  display: none;
+  width: 3px;
+  height: 3px;
+  border:7px solid #fff;
+  border-radius: 50%;
+  z-index: 1;
+  position:absolute;
+  top:-7px;
+  left:25%
+}
 .volume-slider:hover .volume-slider__level{
   border-color:#93CF2E;
 }
+.volume-slider:hover .volume-slider__point{
+  display: block;
+}
+
 
 /* <!-- /sezione volume --> */
 /* sezione footer responsive */
