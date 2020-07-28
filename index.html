@@ -28,6 +28,7 @@
         <nav class="aside-nav d-xs-none">
           <ul>
             <li>
+              <div class="aside-nav__border"></div>
               <img src="img/home.svg" alt="aside home image">
               Home
             </li>
@@ -80,7 +81,10 @@
         <div class="aside-responsive">
           <ul>
             <li><img src="img/logo-small.svg" alt="aside responsive logo image"> </li>
-            <li><img src="img/home.svg" alt="aside responsive home image"></li>
+            <li>
+              <div class="aside-nav__border"></div>
+              <img src="img/home.svg" alt="aside responsive home image">
+            </li>
             <li><img src="img/search.svg" alt="aside responsive search image"></li>
             <li><img src="img/libreria.svg" alt="aside responsive libreria image"></li>
           </ul>
@@ -109,15 +113,47 @@
     </main>
     <!-- sezione player  -->
     <footer>
+      <!-- sezione titolo canzone -->
       <div class="song">
-        <img src="img/sinister.jpeg" alt="image song player">
+        <div class="song__img">
+          <img src="img/sinister.jpeg" alt="image song player">
+        </div>
+        <div class="song__title">
+          <h4>Sinister</h4>
+          <p>Brano Nome</p>
+        </div>
+        <div class="song__liked">
+          <i class="far fa-heart"></i>
+          <i class="far fa-folder"></i>
+        </div>
       </div>
+      <!-- /sezione titolo canzone -->
+      <!-- sezione player canzone-->
       <div class="player">
-gviuk
+        <div class="player__button">
+          <i class="fas fa-random"></i>
+          <i class="fas fa-step-backward"></i>
+          <i class="far fa-play-circle"></i>
+          <i class="fas fa-step-forward"></i>
+          <i class="fas fa-redo-alt"></i>
+        </div>
+        <div class="volume-slider">
+          <div class="volume-slider__level"></div>
+        </div>
       </div>
+      <!-- /sezione player canzone-->
+      <!-- sezione volume -->
       <div class="volume">
-    gkhug
+        <div>
+          <i class="fas fa-bars"></i>
+          <i class="fas fa-desktop"></i>
+          <i class="fas fa-volume-up"></i>
+        </div>
+        <div class="volume-slider">
+          <div class="volume-slider__level"></div>
+        </div>
       </div>
+      <!-- /sezione volume -->
     </footer>
     <!-- /sezione player  -->
   </div>
