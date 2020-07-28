@@ -69,6 +69,7 @@ aside{
   padding-left: 30px;
   background-color: #000;
   color:#5C5C5C;
+  overflow: hidden;
 }
 
 aside li{
@@ -206,13 +207,63 @@ aside a{
 }
 
 /* <!-- /aside bottom --> */
+/* aside responsive */
+/* larghezza corpo centrale */
+.main-content{
+  width: calc(100% - 300px)
+}
+/* /larghezza corpo centrale */
+.aside-responsive{
+  display: none;
+  text-align: center;
+  margin-top: 10px;
+}
 
+.aside-responsive img{
+  width: 35px;
+}
+.aside-responsive img:hover{
+  width: 50px;
+}
+.aside-responsive ul:last-of-type{
+  position: absolute;
+  bottom:10px;
+  left:10px;
+}
+
+.aside-responsive__down li:last-child{
+  background-color: grey;
+  border-radius: 50%;
+  width:30px;
+  height: 30px;
+}
+.aside-responsive__down img:last-of-type{
+  width: 20px;
+  height: 20px;
+}
+@media screen and (max-width:768px){
+  aside{
+    width: 50px;
+    padding: 0;
+  }
+  .d-xs-none{
+    display: none;
+  }
+  .main-content, .upgrade{
+    width: calc(100% - 50px);
+  }
+  .aside-responsive{
+    display: block;
+  }
+}
+/* /aside responsive */
 
 /* <!-- /menu laterale --> */
 /* <!-- corpo centrale --> */
 .main-content{
   height: 100%;
-  width: calc(100% - 300px);
+  /* width: calc(100% - 300px); */
+  /* messa in sezione aside-responsive */
   background-color: #131922;
   overflow-y: auto;
   padding: 15px;
@@ -224,7 +275,17 @@ aside a{
 footer{
   position: relative;
   height: 80px;
-  background-color: red;
-  z-index: 1
+  background-color: #282828;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.song{
+
+}
+
+.song img{
+  width: 25px;
 }
 /* <!-- /sezione player  --> */
