@@ -34,7 +34,7 @@ body{
   width: calc(100% - 300px);
   z-index: 1;
   background-color: #080B12;
-  opacity: 0.6;
+  opacity: 0.8;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -42,7 +42,7 @@ body{
 
 .upgrade a{
   text-decoration: none;
-  color:#fff;
+  color:#C4C4C6;
   margin-right:30px;
   border: 2px solid #C4C4C6;
   border-radius: 23px;
@@ -53,6 +53,7 @@ body{
 .upgrade a:hover{
   font-size:20px;
   border-color: #fff;
+  color:#fff;
 }
 /* <!-- /sezione upgrade --> */
 main{
@@ -122,6 +123,18 @@ aside a{
   overflow-y: hidden;
 }
 
+.playlist-list{
+  height: calc(100% - 105px);
+  overflow-y: auto;
+}
+
+@media screen and (max-height:350px){
+
+  .aside-bottom{
+    display: none;
+  }
+}
+
 .aside-playlist h3{
   padding-top:20px;
   color:#fff;
@@ -153,10 +166,6 @@ aside a{
 
 }
 
-.playlist-list{
-  height: calc(100% - 50px);
-  overflow-y: auto;
-}
 
 .secondary-menu li:hover, .secondary-menu a:hover{
   color:#fff;
@@ -168,6 +177,8 @@ aside a{
   position: absolute;
   bottom:0;
   width: calc(100% - 50px);
+  background-color: #000;
+  padding-top: 10px;
 }
 
 .aside-bottom img{
