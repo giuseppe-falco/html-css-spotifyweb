@@ -284,7 +284,122 @@ aside a{
   padding: 15px;
   padding-top:100px;
 }
+/* <!-- navbar sezioni --> */
+.main-content__nav {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
 
+.main-content__nav li{
+  display: inline-block;
+  text-transform: uppercase;
+  margin-right:15px;
+  margin-bottom:20px;
+  color:#7B7E82;
+  font-weight: bold;
+}
+
+.main-content__nav li:hover{
+  color:#fff;
+}
+
+.nav__border{
+  border-bottom:3px solid #93CF2E;
+  width: 30%;
+  height: 1px;
+  margin: auto;
+  margin-top:3px;
+}
+/* <!-- /navbar sezioni --> */
+/* <!-- box --> */
+.main-content__box{
+  display:flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.main-content__row h2:first-child{
+  margin-bottom:30px;
+  margin-left: 10px;
+}
+.main-content__row > p{
+  color:#5C5C5C;
+  font-size: 14PX;
+  margin-left: 10PX;
+  margin-top:-25px;
+  margin-bottom:20px;
+  font-weight: bold;
+}
+
+.box{
+  text-align: center;
+  width: calc(100% / 6 - 20px);
+  margin: 0 10px;
+  margin-bottom:20px;
+  position: relative;
+}
+
+.box img{
+  width: 100%;
+  margin-bottom:10px;
+}
+
+.box h3{
+  margin-bottom:5px;
+  padding: 0 3px;
+  font-size: 16px;
+}
+
+.box p{
+  color:#5C5C5C;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.box-rounded img{
+  border-radius: 50%;
+}
+
+.box-hover{
+}
+.box-hover:after{
+  display: none;
+  position: absolute;
+  top:35%;
+  left:50%;
+  color:#fff;
+  z-index: 1;
+  transform: translate(-65%, -55%);
+  font-size: 50px;
+  content: '\f144';
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    margin:0px 0px 0px 10px;
+    text-decoration:none;
+}
+.box:hover .box-hover:after{
+  display: block;
+}
+.box:hover{
+  opacity:0.4;
+}
+/* box responsive */
+@media screen and (max-width:1100px){
+  .box{
+    width: calc(100% / 4 - 20px);
+  }
+}
+
+@media screen and (max-width:892px){
+  .box{
+    width: calc(100% / 2 - 20px);
+    /* margin: 0 25px; */
+  }
+}
+/* /box responsive */
+/* <!-- /box --> */
 /* <!-- /corpo centrale --> */
 /* <!-- sezione player  --> */
 footer{
@@ -330,7 +445,7 @@ footer i{
 .song__liked{
   color:#5C5C5C;
   margin-left: 40px;
-  word-spacing: 10px;:
+  word-spacing: 10px;
 }
 
 .song__liked i:hover{
@@ -342,6 +457,10 @@ footer i{
   font-size: 20px;
   width: 50%;
   text-align: center;
+  position: relative;
+  bottom:0;
+  left:8%;
+  /* transform: translate(50%,0); */
 }
 
 .player__button{
@@ -444,6 +563,9 @@ footer i{
     margin:0px;
   }
 
+  .player{
+    position: static;
+  }
   .player__button{
     word-spacing: 5px;
   }
