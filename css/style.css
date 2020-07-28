@@ -342,6 +342,10 @@ aside a{
 
 .box img{
   width: 100%;
+<<<<<<< HEAD
+  max-height: 90%;
+=======
+>>>>>>> master
   margin-bottom:10px;
 }
 
